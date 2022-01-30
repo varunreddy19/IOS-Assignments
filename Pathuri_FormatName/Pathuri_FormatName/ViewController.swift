@@ -27,8 +27,8 @@ class ViewController: UIViewController {
         fullname = fullname + lastNameTextField.text! + ", " + firstNameTextField.text!
         fullNameLabel.text = fullname
         
-        let lastinitial = lastNameTextField.text![lastNameTextField.text!.startIndex]
-        let firstinitial = firstNameTextField.text![firstNameTextField.text!.startIndex]
+        let lastinitial = lastNameTextField.text![lastNameTextField.text!.startIndex.uppercased()
+        let firstinitial = firstNameTextField.text![firstNameTextField.text!.startIndex].uppercased()
         initialsLabel.text = "Initials: \(lastinitial)\(firstinitial)"
         
         
